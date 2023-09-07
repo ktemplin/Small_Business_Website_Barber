@@ -7,36 +7,124 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Frizerie Barber</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./style.css">
     </head>
+    <!-- loader (totally copied from source material, and I couldn't make it work)
     <body>
+        <div class="loader" style="display: none;">
+            <div class="loading">
+              <div class="spinner-grow aloader" role="status">
+                    <span class="sr-only"></span>
+              </div>
+          </div>
+      </div>-->
+    <!-- end loader-->
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <header>
-            <img src="images/logo.png" alt="Frizerie Logo">
-
+    <!-- header start-->
+        <header class="navbar navbar-expand navbar-fixed">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <img src="images/logo.png" alt="Frizerie Logo">
+                <a/>
+                <!-- This was for the burger buttone to display when it get's to a certain size.
+                    I copied theirs trying to figure it out, but was unsuccessful and didn't like how my 
+                    attempts showed up.  
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+                    <i class="la la-bars"></i>
+                    </button> 
+                -->
+                <nav class="navbar-collapse collapse show" id="navbarSupportedContent">
+                    <!-- 
+                    I had planned to create each nav item as an anchor, but the source used an unorder list, and I like the way that looked better.
+                    <a href="#home">
+                        Home
+                    </a>
+                    <a href="#about">
+                        Blog
+                    </a>
+                    <a href="./gallery.html">
+                        Gallery
+                    </a>
+                    <a href="./contact.html">
+                        Contact
+                    </a> -->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-item" href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav-item" href="#about">About</a>
+                        </li>
+                        <li>
+                            <a class="nav-item" href="#team">Team</a>
+                        </li>
+                        <li>
+                            <a class="nav-item" href="#pricing">Pricing</a>
+                        </li>
+                        <li>
+                            <a class="nav-item" href="#gallery">Gallery</a>
+                        </li>
+                        <li>
+                            <a class="nav-item" href="#testimonial">Testimonial</a>
+                        </li>
+                        <li>
+                            <a class="nav-item" href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-        <nav>
-            <a href="./index.html">
-                Home
-            </a>
-            <a href="./blog.html">
-                Blog
-            </a>
-            <a href="./gallery.html">
-                Gallery
-            </a>
-            <a href="./contact.html">
-                Contact
-            </a>
-        </nav>
+    <!-- header end-->
+    <!-- home start -->
+    <section class="home">
+        <div class="container">
+            <div class="row g-5 align-items-center reverse">
+                <div class="col-md">
+                    <div class="content-img">
+                        <img src="images/intro.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="content">
+                        <h1>Professional And Experienced Barbershop</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Assumenda, provident ratione quidem iste consequuntur, error, nam saepe unde odit molestiae repellat.</p>
+                        <button class="button">Get Started</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- home end -->
+    <!-- about start -->
+    <section class="about">
+        <div class="container">
+            <div class="row g-5">
+                
+                <div class="col-md">
+                    <div class="content">
+                        <h1>We are certified barbers who have been established ten years ago</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere corporis atque in quod, dolorum ducimus alias ad deserunt odit omnis, dolores accusamus officia iure sapiente dicta commodi sed fugit obcaecati, animi pariatur ipsum eaque inventore. Et?
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem animi nam sint?
+                        </p>
+                        <button class="button">Contact Us</button>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="content-img">
+                        <img src="images/about.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-
-        <script src="" async defer></script>
+    <script src="main.js"></script>
     </body>
 </html>
